@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    background: none;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Noto Sans Georgian', sans-serif;
+}
+
+@keyframes shakeContainer {
+    0% {
+        opacity: 0;
+        transform: rotateZ(2deg);
+    }
+
+    50% {
+        transform: rotateZ(-2deg);
+    }
+
+    75% {
+        transform: rotateZ(2deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateZ(0deg);
+    }
+}
+
+.main-text {
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: small;
+    transition: 1s;
+}
+
+#first-text {
+    transition: 1s;
+}
+
+.main-container {
+    width: 450px;
+    height: 70px;
+    /* background-image: linear-gradient(90deg, #7e00dec6 0%, #ff00c89e 100%); */
+    background: rgba(0, 0, 0, 0.634);
+    border-radius: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    animation-name: shakeContainer;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    
+}
+
+/* .main-container:hover, .main-container:focus{
+	box-shadow: inset 13em 0 0 0 #8fc866;
+    transition: 1s;
+} */
+
+.alert-yes {
+    font-size: 60px;
+    margin-left: 3px;
+    color: rgb(157, 0, 255);
+    transition: 1s;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.alert-yes:hover,
+.alert-yes:focus {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+    animation: pulse 1s;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgb(157, 0, 255);
+    }
+}
+
+
+.alert-yes:hover {
+    transform: rotateY(30deg);
+}
+
+.alert-no {
+    font-size: 60px;
+    color: rgb(255, 0, 106);
+    margin-left: 387px;
+    position: absolute;
+    transition: 1s;
+    border-radius: 50%;
+}
+
+.alert-no:hover,
+.alert-no:focus {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+    animation: pulseno 1s;
+}
+
+@keyframes pulseno {
+    0% {
+        box-shadow: 0 0 0 0 rgb(255, 0, 106);
+    }
+}
+
+.alert-no:hover {
+    transform: rotateY(-30deg);
+}
+
+.main-container i {
+    cursor: pointer;
+}
