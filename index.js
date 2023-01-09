@@ -23,7 +23,7 @@ function animationMoveNo(){
         textNone.style.opacity = 0;
         yesanim.style.opacity = 0;
         maincontainer.style.transition = "1s"
-        maincontainer.style.boxShadow = "inset -385px 0 0 0 rgb(255, 208, 0, 0.625)";
+        maincontainer.style.boxShadow = "inset -385px 0 0 0 #ffbf00b8";
         noanim.style.marginLeft = "3px";
         setInterval((noanimationinterval) => {
             if (noanim.style.marginLeft = "3px"){
