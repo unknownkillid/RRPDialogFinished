@@ -80,7 +80,7 @@ body {
 .alert-yes {
     font-size: 60px;
     margin-left: 3px;
-    color: rgb(157, 0, 255);
+    color: rgb(255, 0, 106);
     transition: 1s;
     position: absolute;
     border-radius: 50%;
@@ -94,7 +94,7 @@ body {
 
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 0 0 rgb(157, 0, 255);
+        box-shadow: 0 0 0 0 rgb(255, 0, 106);
     }
 }
 
@@ -105,7 +105,7 @@ body {
 
 .alert-no {
     font-size: 60px;
-    color: rgb(255, 0, 106);
+    color: rgb(255, 208, 0);
     margin-left: 387px;
     position: absolute;
     transition: 1s;
@@ -120,7 +120,7 @@ body {
 
 @keyframes pulseno {
     0% {
-        box-shadow: 0 0 0 0 rgb(255, 0, 106);
+        box-shadow: 0 0 0 0 rgb(255, 208, 0);
     }
 }
 

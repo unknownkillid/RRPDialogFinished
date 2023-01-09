@@ -8,7 +8,7 @@ function animationMoveYes(){
         textNone.style.opacity = 0;
         noanim.style.opacity = 0;
         maincontainer.style.transition = "1s"
-        maincontainer.style.boxShadow = "inset 385px 0 0 0 rgba(206, 126, 255, 0.625)";
+        maincontainer.style.boxShadow = "inset 385px 0 0 0 rgb(255, 0, 106, 0.625)";
         yesanim.style.marginLeft = "387px";
         setInterval((yesanimationinterval) => {
             if (yesanim.style.marginLeft = "387px"){
@@ -23,7 +23,7 @@ function animationMoveNo(){
         textNone.style.opacity = 0;
         yesanim.style.opacity = 0;
         maincontainer.style.transition = "1s"
-        maincontainer.style.boxShadow = "inset -385px 0 0 0 rgb(255, 0, 106)";
+        maincontainer.style.boxShadow = "inset -385px 0 0 0 rgb(255, 208, 0, 0.625)";
         noanim.style.marginLeft = "3px";
         setInterval((noanimationinterval) => {
             if (noanim.style.marginLeft = "3px"){
